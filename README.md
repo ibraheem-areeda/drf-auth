@@ -52,3 +52,73 @@ Api CRUD routes:
 
     route: http://127.0.0.1:8000/api/v1/items/
 
+## Routes
+
+CRUD Routes for Cookie_stands
+
+Token Required:
+
+    read : no
+
+    creat , update , delet : yes
+
+    api/v1/Cookie_stands/
+
+Create Cookie_stands
+
+HTTP Method: POST
+
+Route: api/v1/Cookie_stands/
+
+Token Required: Yes
+
+Example Request (using ThunderClient):
+
+POST http://127.0.0.1:8000/api/v1/Cookie_stands/
+Authorization: Bearer YOUR_ACCESS_TOKEN
+Content-Type: application/json
+
+
+Read Cookie_stands
+
+HTTP Method: GET
+
+Route: /api/v1/Cookie_stands/{id}
+
+Token Required: no
+
+Example Request (using ThunderClient):
+
+GET http://127.0.0.1:8000/api/v1/Cookie_stands/1
+
+Update Cookie_stands
+
+HTTP Method: PUT
+
+Route: /api/v1/Cookie_stands/{id}
+
+Token Required: Yes
+
+Example Request (using ThunderClient):
+
+PATHCH http://127.0.0.1:8000/api/v1/Cookie_stands/1
+Authorization: Bearer YOUR_ACCESS_TOKEN
+Content-Type: application/json
+
+Delete Cookie_stands
+
+HTTP Method: DELETE
+
+Route: /api/v1/Cookie_stands/{id}
+
+Token Required: Yes
+
+Example Request (using ThunderClient):
+
+DELETE http://127.0.0.1:8000/api/v1/Cookie_stands/1
+Authorization: Bearer YOUR_ACCESS_TOKEN
+
+Example Response:
+
+204 No Content
+
